@@ -1,0 +1,14 @@
+{
+  "name": "rg-serverless-demo1",
+  "version": "1.0.0",
+  "description": "Serverless REST API with MongoDB using Mongoose and Bluebird",
+  "main": "handler.js",
+  "dependencies": {
+    "@slack/client": "^3.11.0",
+    "bluebird": "^3.5.0",
+    "mongoose": "^4.9.6",
+    "validator": "^7.0.0"
+  },
+  "author": "Jay Gandhi <gandhi.j@reportgarden.com>",
+  "license": "MIT"
+}

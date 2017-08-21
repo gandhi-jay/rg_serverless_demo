@@ -1,0 +1,19 @@
+
+service:  #Replace with your personal AWS Username
+
+provider:
+  name: aws
+  runtime: nodejs6.10
+  stage: dev
+  region: # your region
+  profile: default #Replace with your personal Serverless Profilename
+  deploymentBucket: # Bucket Name
+
+functions:
+  feedback:
+    handler: handler.feedback
+    events:
+      - http:
+          path: feedback
+          method: post
+          cors: true
